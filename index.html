@@ -138,8 +138,9 @@
             document.getElementById("savingsAmount").textContent = totalSaved;
             document.getElementById("remainingAmount").textContent = (amountRequired - totalSaved).toFixed(2);
             updateCyclePicture();
-            logTransaction(amountToAdd, source);
+            logTransaction(amountToAdd, source);  
         }
+
 
         function updateCyclePicture() {
             let allVisible = true;
@@ -160,7 +161,7 @@
             const entry = document.createElement("p");
             let date = new Date();
             let timestamp = date.toLocaleString();
-            entry.textContent = `Saved Rs.{amount} from {source} on {timestamp}`;
+            entry.textContent = `Saved Rs.${amount} from ${source} on ${timestamp}`;
             log.appendChild(entry);
         }
 
