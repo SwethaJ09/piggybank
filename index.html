@@ -153,7 +153,7 @@
                     allVisible = false;
                 }
             }
-            document.getElementById("doneButton").style.display = allVisible ? "block" : "none";
+           //document.getElementById("doneButton").style.display = allVisible ? "block" : "none";
         }
 
         function logTransaction(amount, source) {
@@ -161,7 +161,7 @@
             const entry = document.createElement("p");
             let date = new Date();
             let timestamp = date.toLocaleString();
-            entry.textContent = `Saved Rs.${amount} from ${source} on ${timestamp}`;
+            entry.textContent = `Saved Rs. ${amount} from ${source} on ${timestamp}`;
             log.appendChild(entry);
         }
 
