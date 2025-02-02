@@ -61,10 +61,14 @@
         .transaction-log {
             margin-top: 20px;
             text-align: left;
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.8); /* Increased opacity */
             padding: 10px;
             border-radius: 5px;
+            color: black; /* Ensures text is visible */
+            max-height: 200px; /* Adds scrollability if content overflows */
+            overflow-y: auto;
         }
+
         #doneButton {
             display: none;
             margin-top: 15px;
